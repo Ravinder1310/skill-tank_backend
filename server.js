@@ -12,14 +12,9 @@ Connection();
 
 // rest obj
 
-const corsOptions = {
-    origin: 'http://localhost:3000',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-  };
 
 const app = express();
-app.use(cors(corsOptions))
+app.use(cors())
 app.use(express.json())
 
 // routes
